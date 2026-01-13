@@ -37,6 +37,18 @@ public class ConfigManager {
     private ConfigManager() {}
 
     /**
+     * Retrieves a string value for the specified configuration key with a default fallback.
+     * Useful when the key might be missing in the configuration file.
+     *
+     * @param key The key of the property to retrieve.
+     * @param defaultValue The value to return if the key is not found.
+     * @return The value associated with the key, or defaultValue if not found.
+     */
+    public static String getProperty(String key, String defaultValue) {
+        return properties.getProperty(key, defaultValue);
+    }
+
+    /**
      * Retrieves a string value for the specified configuration key.
      *
      * @param key The key of the property to retrieve.
