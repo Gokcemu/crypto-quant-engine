@@ -1,8 +1,8 @@
-package com.quant.crypto.model;
+package com.quant.crypto.stream;
 
 /**
  * Interface for listening to real-time market trade events.
- * Implementations of this interface can subscribe to the {@link com.quant.crypto.service.BinanceStreamClient}
+ * Implementations of this interface can subscribe to the {@link BinanceStreamClient}
  * to receive price updates.
  *
  * @author Gokcem Usul
